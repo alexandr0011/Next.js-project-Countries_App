@@ -16,7 +16,7 @@ export async function generateMetadata({
   params: { name },
 }: CountryDetailProps): Promise<Metadata> {
   return {
-    title: `${name} | Countries App`,
+    title: `${decodeURI(name)} | Countries App`,
   };
 }
 
